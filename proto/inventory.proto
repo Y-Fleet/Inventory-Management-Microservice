@@ -1,0 +1,70 @@
+syntax = "proto3";
+package inventory;
+import "annotations.proto";
+
+option go_package = "./proto";
+
+service inventoryService {
+  rpc AddItem (AddItemRequest) returns (AddItemResponse) {
+    option (google.api.http) = {
+      post: "/AddItem"
+      body: "*"
+    };
+  }
+  rpc GetItem (GetItemRequest) returns (GetItemResponse) {
+    option (google.api.http) = {
+      post: "/GetItem"
+      body: "*"
+    };
+  }
+  rpc DelItem (DelItemRequest) returns (DelItemResponse) {
+    option (google.api.http) = {
+      post: "/DelItem"
+      body: "*"
+    };
+  }
+
+    rpc GetInventory (GetInventoryRequest) returns (GetItemResponse) {
+  }
+  
+}
+message AddItemRequest {
+  string name = 1;
+  string desc = 2;
+  int32 kg = 3;
+}
+
+
+message AddItemResponse {
+  string message = 1;
+}
+
+message GetItemRequest {
+}
+
+message GetItemResponse {
+  repeated Item items = 1;
+}
+
+message Item {
+  string ID = 1;
+  string name = 2;
+  string desc = 3;
+  int32 kg = 4;
+}
+
+message DelItemResponse {
+  string message = 1;
+}
+
+message DelItemRequest {
+  string ID = 1;
+}
+
+message GetInventoryRequest {
+  repeated ItemsId ID = 1;
+}
+
+message ItemsId {
+  string ID = 1;
+}
