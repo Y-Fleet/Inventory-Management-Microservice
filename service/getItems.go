@@ -6,7 +6,7 @@ import (
 	"log"
 	"time"
 
-	proto "github.com/Yfleet/shared_proto/api"
+	proto "github.com/Y-Fleet/Grpc-Api/api"
 	"go.mongodb.org/mongo-driver/bson"
 	"go.mongodb.org/mongo-driver/bson/primitive"
 	"go.mongodb.org/mongo-driver/mongo"

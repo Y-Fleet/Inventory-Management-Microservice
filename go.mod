@@ -2,7 +2,7 @@ module inventory
 
 go 1.20
 
-require github.com/Yfleet/shared_proto v0.0.0
+require github.com/Y-Fleet/Grpc-Api v0.0.0
 
 require (
 	github.com/golang/protobuf v1.5.3 // indirect
@@ -26,4 +26,4 @@ require (
 	google.golang.org/protobuf v1.30.0 // indirect
 )
 
-replace github.com/Yfleet/shared_proto => ../shared_proto
+replace github.com/Y-Fleet/Grpc-Api => ../Grpc-Api

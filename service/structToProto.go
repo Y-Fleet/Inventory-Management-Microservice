@@ -3,7 +3,7 @@ package service
 import (
 	models "inventory/models"
 
-	api "github.com/Yfleet/shared_proto/api"
+	api "github.com/Y-Fleet/Grpc-Api/api"
 )
 
 func ItemsToProto(items []models.Item, err error) *api.GetItemResponse {

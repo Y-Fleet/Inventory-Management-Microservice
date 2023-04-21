@@ -3,7 +3,7 @@ package service
 import (
 	models "inventory/models"
 
-	pb "github.com/Yfleet/shared_proto/api"
+	pb "github.com/Y-Fleet/Grpc-Api/api"
 )
 
 func protoToStruct(rq *pb.AddItemRequest) models.Item {

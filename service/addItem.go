@@ -5,7 +5,7 @@ import (
 	"log"
 	"time"
 
-	pb "github.com/Yfleet/shared_proto/api"
+	pb "github.com/Y-Fleet/Grpc-Api/api"
 	"go.mongodb.org/mongo-driver/mongo"
 )
 
